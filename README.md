@@ -1,1 +1,2 @@
 # MBG
+Get codon probabilities shows what the probability of codons will be given a certain GC content (default provided) and then what proteins will be most likely upon application of a vertebrate common amino acid pattern
