@@ -20,6 +20,4 @@ getCodonProbabilities <- function(A = .125, C = .325, G = .325, U = .125) {
   threeNucProb[2,,] <- threeNucProb[2,,]*cArray
   threeNucProb[3,,] <- threeNucProb[3,,]*gArray
   threeNucProb[4,,] <- threeNucProb[4,,]*uArray
-  View(threeNucProb)
-  print(threeNucProb)
-}
+}  
