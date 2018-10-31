@@ -1,0 +1,13 @@
+addspace <- function(words, target) {
+  require(tidyverse)
+  myseq <- words
+  toReplace <- c("\n" = ""," " = "")
+  myseq <- str_replace_all(myseq, toReplace,"")
+  myseq <- gsub("(.{3})", "\\1 ", myseq)
+  myseq <- strsplit(myseq, " ")
+  myseq <- unlist(myseq)
+  matches <- grep(target, myseq, fixed = T)
+  print(matches)
+  print(myseq)
+}
+
